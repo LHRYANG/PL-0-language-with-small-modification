@@ -39,6 +39,9 @@ public class BaseScope implements Scope {
 		sym.scope = this; // track the scope in each symbol
 	}
 	
+	
+	
+	
 	public String getScopeName() {
 		return scopename;
 	}

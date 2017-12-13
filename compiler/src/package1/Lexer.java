@@ -3,7 +3,7 @@ package package1;
 /*This is a universal base class for lexer, so we define an abstract class!*/
 public abstract class Lexer {
 	public static final char EOF = (char)-1; //EOF: the tail of a file
-	public static final int EOF_TYPE=1;  // the lexical type of EOF
+	public static final int EOF_TYPE=0;  // the lexical type of EOF
 	String input;   // input string
 	int p=0;  //the subscript of current char
 	char c;  //the current char

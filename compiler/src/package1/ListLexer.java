@@ -192,7 +192,9 @@ public class ListLexer extends Lexer{
 			    case '=':
 			    	consume();
 			    	return new Token(EQUAL, "=");
-			    	
+			    case '#':
+			    	consume();
+			    	return new Token(NEQUAL, "#");
 			    case '>':
 			    	return GREATER();
 			    case '<':

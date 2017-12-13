@@ -1,0 +1,15 @@
+CONST a=5,b=10;
+VAR c,d;
+
+procedure g;
+	CONST e=20;
+	VAR f;
+	procedure h;
+		CONST b=30,c=40;
+		VAR t;
+		begin 
+		  d:=a+b;
+		  write(d) 
+		end;	
+	call h;
+call g	

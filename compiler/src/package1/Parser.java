@@ -7,8 +7,10 @@ public abstract class Parser {
     public Parser(Lexer input) { this.input = input; consume(); }
     /** If lookahead token type matches x, consume & return else error */
     public void match(int x) {
-        if ( lookahead.type == x )
+        if ( lookahead.type == x ) {
+        	System.out.println(lookahead.text+": "+ListLexer.tokenNames[lookahead.type]);
         	consume();
+        }
         else
         	throw new Error("expecting "+input.getTokenName(x)+
                              "; found "+ lookahead);

@@ -6,7 +6,10 @@ procedure g;
 	VAR f;
 	procedure h;
 		CONST b=30,c=40;
+		VAR t;
 		begin 
-		  d:=a+b
+		  d:=a+b;
+		  write(d) 
 		end;	
 	call h;
+call g	

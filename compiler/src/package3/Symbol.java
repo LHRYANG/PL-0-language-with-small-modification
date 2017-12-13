@@ -9,7 +9,14 @@ public class Symbol { // A generic programming language symbol
     
    public int index;     //this is used to record the index of Symbols in Data stack
    public int address;   // if this symbol is function,it is used to point to the entry.
-    
+   
+   public int level;
+   public int addr;
+   
+   public int index2;
+   
+   
+   
     public Symbol(String name) { this.name = name; }
     public Symbol(String name, String type) { this(name); this.type = type; }
     public Symbol(String name,String type,int index) {this.name=name;this.type=type;this.index=index;}
